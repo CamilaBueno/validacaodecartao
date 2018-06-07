@@ -11,7 +11,7 @@ function isValidCard() {
   }
 
   for (var i = 0; i < cardNumber.length; i++) {
-    if (i %2 !== 0) {
+    if (i % 2 !== 0) {
       result += parseInt(cardNumber[i]);
     } else {
       multResult = cardNumber[i] * 2;
@@ -22,7 +22,7 @@ function isValidCard() {
     }
   }
 
-  if (result %10 === 0) {
+  if (result % 10 === 0) {
     document.write("O número do cartão de crédito é válido!");
   } else {
     document.write("O número do cartão de crédito é inválido!");
